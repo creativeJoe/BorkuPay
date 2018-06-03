@@ -18,10 +18,10 @@ app.set('json spaces', 5);
 
 app.use(function(req, res, next){
 	res.locals.connection = mysql.createConnection({
-		host     : 'localhost',
-		user     : 'root',
-		password : '',
-		database : 'boukuPay'
+		host     : 'sql9.freemysqlhosting.net',
+		user     : 'sql9241176',
+		password : 'z3PCFHkljC',
+		database : 'sql9241176'
 	});
 	res.locals.connection.connect();
 	next();
