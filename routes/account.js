@@ -304,9 +304,9 @@ router.post('/login', function(req, res, next) {
 
 			    			if (is_valid == true) {
 
-			    				if (result[0].account_type == "seller") res.json({ res: false, message: "verified", account_data: {name: result[0].fullname, email: result[0].email, business_name: result[0].business_name, address: result[0].address, product_category: result[0].product_category, account_type: result[0].account_type}, reason: "Successful" });
+			    				if (result[0].account_type == "seller") res.json({ res: true, message: "verified", account_data: {name: result[0].fullname, email: result[0].email, business_name: result[0].business_name, address: result[0].address, product_category: result[0].product_category, account_type: result[0].account_type}, reason: "Successful" });
 
-			    				else res.json({ res: false, message: "verified", account_data: {name: result[0].fullname, email: result[0].email, account_type: result[0].account_type}, reason: "Successful" });
+			    				else res.json({ res: true, message: "verified", account_data: {name: result[0].fullname, email: result[0].email, account_type: result[0].account_type}, reason: "Successful" });
 
 			    			}
 
